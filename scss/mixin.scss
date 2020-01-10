@@ -1,0 +1,18 @@
+@import "custom-theme";
+@mixin button {
+    
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 0;
+        color: #fff;
+        transition: all 0.4s ease-in-out;
+          &:hover{
+            border-color: $color-primary-500;
+            color:$color-primary-500; 
+        }
+} 
+@mixin set-icon($name){
+  .icon-#{$name}{
+    background: url("..Images/#{$name}.jpeg");
+  }
+}

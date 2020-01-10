@@ -1,0 +1,151 @@
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #348cd4;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0E217A; }
+
+p {
+  color: #94969a;
+  font-size: 14px; }
+
+h1, h3 {
+  color: #bdbcbc !important; }
+
+h2 {
+  font-size: 3rem !important;
+  color: #bdbcbc !important; }
+
+nav {
+  background: #000000d6; }
+  nav ul {
+    padding: 25px; }
+    nav ul li .menu {
+      color: #fff;
+      transition: 0.4s ease;
+      padding: 20px 0; }
+      nav ul li .menu:hover {
+        color: #348cd4;
+        text-decoration: none;
+        border-top: 3px solid #348cd4;
+        border-bottom: 3px solid #348cd4;
+        padding: 6px 0; }
+
+.bg-image {
+  background-image: url("../Images/banner.jpeg");
+  background-size: cover;
+  background-attachment: fixed; }
+  .bg-image .img-color-overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 620px; }
+  .bg-image .btn {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    transition: all 0.4s ease-in-out; }
+    .bg-image .btn:hover {
+      border-color: #348cd4;
+      color: #348cd4; }
+
+.about-page {
+  background: #000;
+  padding-top: 25px; }
+  .about-page .about-description .btn {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    transition: all 0.4s ease-in-out; }
+    .about-page .about-description .btn:hover {
+      border-color: #348cd4;
+      color: #348cd4; }
+
+.latest-work .nav .nav-item .nav-link {
+  color: #000;
+  transition: all 0.4s ease-in-out; }
+  .latest-work .nav .nav-item .nav-link:hover {
+    color: #348cd4; }
+
+.portfolio {
+  background-image: url("../Images/4.jpeg");
+  background-attachment: fixed;
+  background-size: cover; }
+  .portfolio .btn {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    transition: all 0.4s ease-in-out; }
+    .portfolio .btn:hover {
+      border-color: #348cd4;
+      color: #348cd4; }
+  .portfolio .portfolio_overlay {
+    background-color: rgba(0, 0, 0, 0.9); }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #348cd4;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+
+.overlay-effect:hover .overlay {
+  opacity: 3;
+  transition: 0.5s;
+  cursor: pointer; }
+
+.overlay-effect {
+  position: relative; }
+
+.typewriter-text {
+  display: block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  border-right: 4px solid #348cd4;
+  box-sizing: border-box;
+  color: #348cd4; }
+
+@keyframes typing {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+@keyframes blink {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #348cd4; } }
+
+footer {
+  background: #191919; }
+  footer .social-icon a {
+    color: #94969a; }
+    footer .social-icon a:hover {
+      color: #348cd4;
+      transition: all 0.4s ease-in-out; }
